@@ -1,58 +1,123 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>My Test Page</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+</head>
 
 <body>
 
-	<audio controls autoplay loop>
-	  <source src="test.mp3" type="audio/mpeg">
-	  Your browser does not support the audio element.
-	</audio>
+<h1>Baadshah O Baadshah</h1>
 
-	<p>
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-		Happy Birthday to you!!!
-	<p>
+<audio id="player" preload="auto" controls loop>
+	<source src="test.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
 
+<div class="video-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4HsDhwPhOAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-	<img src="https://lh3.googleusercontent.com/Nn2_ABTPrjueBHAkM5_Sm7WZCooNKhSyG5zJzQrgNDpvLj7hoCHPBA9uKWAF6lUbfw=w720-h310"></img>
+<!--
+
+Original Lyrics:
+
+http://smriti.com/hindi-songs/aashiq-huun-main-...-baadashaah-o-baadashaah-utf8
+
+Original Song:
+
+youtube-dl --extract-audio --audio-format mp3 --output test.mp3 "https://www.youtube.com/watch?v=4HsDhwPhOAg"
+
+-->
+
+<pre>
+अ:	( ओ
+को:	ओ ) -४
+अ:	आशिक़ हूँ मैं क़ातिल भी हूँ
+सबके दिलों में शामिल भी हूँ
+को:	ओ ओ
+अ:	( आशिक़ हूँ मैं क़ातिल भी हूँ
+सबके दिलों में शामिल भी हूँ ) -२
+दिल को चुराना नींदें उड़ाना बस यही मेरा क़ुसूर
+वादों से अपने मुकरता नहीं
+मरने से मैं कभी डरता नहीं
+को:	बादशाह ओ बादशाह
+बादशाह ऐ बादशाह
+बादशाह ओ बादशाह
+बादशाह
+
+अ:	चारों तरफ़ हैं मेरे ही चर्चे होंठों पे है बस मेरा नाम
+रंगों भरी सुबह मेरी मस्ती में डूबी है मेरी शाम
+झूठी कहानी सच्ची लगे आवारगी मुझे अच्छी लगे
+नग़में सुनाना सबको नचाना बस यही मेरा क़ुसूर
+वादों से अपने मुकरता नहीं
+मरने से मैं कभी डरता नहीं
+को:	बादशाह ओ बादशाह
+बादशाह ऐ बादशाह
+बादशाह ओ बादशाह
+बादशाह
+को:	ओ ओ
+
+अ:	है ये मोहब्बत कमज़ोरी मेरी चाहत की दुनिया पे मेरा राज
+बस रब के आगे झुकता मेरा सर झुकते मेरे सामने तख्त-ओ-ताज
+अंदाज़ मेरा सबसे जुदा मैं बादशाहों का बादशाह
+सपने सजाना हँसना हँसाअना बस यही मेरा क़ुसूर
+वादों से अपने मुकरता नहीं
+मरने से मैं कभी डरता नहीं
+आ
+को:	बादशाह ओ बादशाह
+बादशाह ऐ बादशाह
+बादशाह ओ बादशाह
+बादशाह
+
+अ:	आशिक़ हूँ मैं क़ातिल भी हूँ
+सबके दिलों में शामिल भी हूँ
+दिल को चुराना नींदें उड़ाना बस यही मेरा क़ुसूर
+वादों से अपने मुकरता नहीं
+मरने से मैं कभी डरता नहीं
+को:	( बादशाह ओ बादशाह
+बादशाह ऐ बादशाह
+बादशाह ओ बादशाह
+बादशाह ) -२
+</pre>
 
 </body>
+
+<style>
+
+audio {
+	width: 100%;
+	height: 50px;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	font-size: calc(16px + 0.5vw);
+	line-height: calc(1.1em + 0.5vw);
+}
+
+pre {
+	tab-size: 1;
+	white-space: pre-wrap;
+}
+
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+</style>
 
 </html>
