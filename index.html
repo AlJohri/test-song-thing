@@ -3,6 +3,8 @@
 
 <head>
 <title>My Test Page</title>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 </head>
 
@@ -10,31 +12,12 @@
 
 <h1>Baadshah O Baadshah</h1>
 
-<p>
+<div id="player-wrapper">
 <audio id="player" preload="auto" controls loop>
 	<source src="test.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio>
-</p>
-
-<!-- <div class="video-responsive">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4HsDhwPhOAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
--->
-
-<!--
-
-Original Lyrics:
-
-http://smriti.com/hindi-songs/aashiq-huun-main-...-baadashaah-o-baadashaah-utf8
-
-Original Song:
-
-youtube-dl --extract-audio --audio-format mp3 --output test.mp3 "https://www.youtube.com/watch?v=4HsDhwPhOAg"
-
--->
 
 <pre>
 अ:	( ओ
@@ -91,9 +74,15 @@ youtube-dl --extract-audio --audio-format mp3 --output test.mp3 "https://www.you
 
 <style>
 
+@supports (-webkit-overflow-scrolling: touch) {
+	#player-wrapper {
+		height: 80px;
+	}
+}
+
+
 audio {
 	width: 100%;
-	height: 50px;
 	display: block;
 }
 
@@ -106,30 +95,13 @@ body {
 }
 
 h1 {
-	font-size: calc(20px + 2vw);
+	font-size: calc(25px + 3.5vmin);
 }
 
 pre {
 	tab-size: 1;
 	white-space: pre-wrap;
 }
-
-/*
-.video-responsive {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-
-.video-responsive iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-*/
 
 </style>
 
